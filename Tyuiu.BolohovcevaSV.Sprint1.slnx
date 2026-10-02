@@ -7,6 +7,6 @@
   <Folder Name="/Task1/">
     <Project Path="Tyuiu.BolohovcevaSV.Sprint1.Task1.V20.Lib/Tyuiu.BolohovcevaSV.Sprint1.Task1.V20.Lib.csproj" />
     <Project Path="Tyuiu.BolohovcevaSV.Sprint1.Task1.V20.Test/Tyuiu.BolohovcevaSV.Sprint1.Task1.V20.Test.csproj" />
-    <Project Path="Tyuiu.BolohovcevaSV.Sprint1.Task1/Tyuiu.BolohovcevaSV.Sprint1.Task1.V20.csproj" />
+    <Project Path="Tyuiu.BolohovcevaSV.Sprint1.Task1.V20/Tyuiu.BolohovcevaSV.Sprint1.Task1.V20.csproj" />
   </Folder>
 </Solution>
