@@ -26,7 +26,6 @@ namespace Tyuiu.BolohovcevaSV.Sprint1.Task3.V10
             Console.WriteLine("***************************************************************************");
 
             Console.Write("Введите дробное число: ");
-
             string input = Console.ReadLine();
 
             double x = double.Parse(input, CultureInfo.InvariantCulture);
@@ -35,9 +34,7 @@ namespace Tyuiu.BolohovcevaSV.Sprint1.Task3.V10
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(" " + ds.NumberToMoney(x));
-
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine(ds.NumberToMoney(x));
             Console.ReadKey();
         }
     }
