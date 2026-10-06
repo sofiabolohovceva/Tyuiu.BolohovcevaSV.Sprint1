@@ -1,25 +1,17 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint1;
-using System;
+﻿using System;
 
 namespace Tyuiu.BolohovcevaSV.Sprint1.Task3.V10.Lib
 {
-    public class DataService : ISprint1Task3V10
+    public class DataService
     {
         public string NumberToMoney(double number)
         {
-            number = Math.Round(number, 2);
+            number = Math.Round(number, 3);
 
-            int rub = (int)number;
+            int rubles = (int)number;
+            int kopecks = (int)((number - rubles) * 100);
 
-            int kop = (int)Math.Round((number - rub) * 100);
-
-            if (kop == 100)
-            {
-                rub++;
-                kop = 0;
-            }
-
-            return $"{rub} руб. {kop} коп.";
+            return $"{number.ToString(System.Globalization.CultureInfo.InvariantCulture)} руб. - это {rubles} руб. {kopecks} коп.";
         }
     }
 }

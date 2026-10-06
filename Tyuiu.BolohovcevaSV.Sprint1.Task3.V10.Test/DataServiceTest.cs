@@ -12,11 +12,8 @@ namespace Tyuiu.BolohovcevaSV.Sprint1.Task3.V10.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 69.6;
 
-            var res = ds.NumberToMoney(x);
-
-            Assert.AreEqual("69 руб. 60 коп.", res);
+            Assert.AreEqual("30.5 руб. - это 30 руб. 50 коп.", ds.NumberToMoney(30.5));
         }
     }
 }

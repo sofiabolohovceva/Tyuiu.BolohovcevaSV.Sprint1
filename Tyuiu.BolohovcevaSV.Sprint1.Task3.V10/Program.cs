@@ -6,7 +6,7 @@ namespace Tyuiu.BolohovcevaSV.Sprint1.Task3.V10
 {
     internal class Program
     {
-        static void Main(string args)
+        static void Main(string[] args)
         {
             DataService ds = new DataService();
             Console.Title = "Спринт 1 | Выполнила: Болоховцева С. В. | СМАРТБ-26-1";
@@ -27,6 +27,8 @@ namespace Tyuiu.BolohovcevaSV.Sprint1.Task3.V10
 
             Console.Write("Введите дробное число: ");
             string input = Console.ReadLine();
+
+            input = input.Replace(',', '.');
 
             double x = double.Parse(input, CultureInfo.InvariantCulture);
 
