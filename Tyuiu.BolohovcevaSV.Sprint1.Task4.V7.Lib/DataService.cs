@@ -9,7 +9,9 @@ namespace Tyuiu.BolohovcevaSV.Sprint1.Task4.V7.Lib
         {
             double z = (1 + Math.Sqrt(x * y)) / Math.Pow(x - 3 * y, 2);
 
-            return Math.Round(z, 3);
+            z = Math.Truncate(z * 1000) / 1000;
+
+            return z;
         }
     }
 }
